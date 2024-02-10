@@ -1,0 +1,121 @@
+.footer {
+  background: #2f303a;
+
+  &__container {
+    height: 252px;
+    padding-left: 20px;
+    display: flex;
+    gap: 140px;
+    align-items: center;
+  }
+
+  &__address {
+    color: $texto;
+
+    &:hover {
+      color: $back;
+    }
+  }
+
+  ul&__list {
+    li&__item {
+      a&__link {
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 24px;
+        letter-spacing: 0.42px;
+
+        &:hover,
+        &:focus {
+          color: $back;
+        }
+      }
+    }
+  }
+
+  &__redes {
+    margin-bottom: 70px;
+
+    h3&__title {
+      color: $back;
+      font-family: Roboto;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $resaltado;
+      }
+    }
+
+    ul&__item {
+      li&__circle {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        color: $back;
+        align-items: center;
+        align-content: center;
+        transition: background-color 250ms $cubic;
+
+        &:hover {
+          background-color: $resaltado;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  &__suscripcion {
+    h3&__title {
+      color: $back;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+    }
+
+    &__contacto-email {
+      display: flex;
+      margin-bottom: 70px;
+      color: rgba(255, 255, 255, 0.6);
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.48px;
+
+      &__input {
+        color: $back;
+        width: 358px;
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(33, 150, 243, 0);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 11px 11px 11px 41px;
+      }
+
+      &__btn-suscribirse {
+        color: $back;
+        border-radius: 4px;
+        background: $resaltado;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 200px;
+        height: 50px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

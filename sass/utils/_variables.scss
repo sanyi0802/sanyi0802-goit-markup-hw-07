@@ -1,0 +1,20 @@
+$resaltado: #2196f3;
+$texto: #212121;
+$simple: #757575;
+$icon: #afb1b8;
+$back: #ffffff;
+$bmid: #f5f4fa;
+$bce: #ccc;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: $simple;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  ul {
+    padding: 0%;
+  }
